@@ -21,8 +21,10 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 
-
-Route::get('/public', [CategoryController::class,'home']);
-Route::get('/public/categories', [CategoryController::class,'list']);
-Route::get('/public/categories/{slug}', [CategoryController::class,'index']);
-Route::get('/public/notices/{slug}', [NoticeController::class,'show']);
+Route::prefix('public')->group(function () {
+    Route::get('/', [CategoryController::class, 'home']);
+    Route::get('/categories', [CategoryController::class, 'list']);
+    Route::get('/categories/{slug}', [CategoryController::class, 'index']);
+    Route::get('/notices', [NoticeController::class, 'latest']);
+    Route::get('/notices/{slug}', [NoticeController::class, 'show']);
+});
