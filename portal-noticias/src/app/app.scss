@@ -28,15 +28,24 @@
 .menu {
   position: sticky;
   top: 0;
-  z-index: 10;
+  z-index: 1000;
+
+  width: 90%;
+  max-width: 1200px;
+
+  margin: 0 auto 5px auto;
+
   background: #9a6666;
+  border-radius: 18px;
+
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 35px;
-  padding: 8px 20px;
-  flex-wrap: nowrap;
-  min-height: 45px;
+  gap: 40px;
+
+  padding: 2px 20px;
+
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
 }
 
 .menu a {
