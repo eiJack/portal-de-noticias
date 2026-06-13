@@ -2,7 +2,7 @@
     <h1>Utilidade Pública</h1>
 
     <article class="noticia">
-
+        <span class="categoria-tag">Serviços ao Cidadão</span>
         <h2>PAT São Roque amplia divulgação de oportunidades de emprego</h2>
 
         <p>
@@ -25,13 +25,12 @@
             <li>Facilita o acesso ao mercado de emprego.</li>
             <li>Contribui para a redução do desemprego local.</li>
         </ul>
+        <a [routerLink]="['/noticia', 1]">Ler mais</a>
 
     </article>
 
-    <hr>
-
     <article class="noticia">
-
+        <span class="categoria-tag">Defesa Civil e Saúde</span>
         <h2>Alerta de frio intenso no Sul e Sudeste</h2>
 
         <p>
@@ -48,13 +47,11 @@
             <li>Orienta a população sobre riscos das baixas temperaturas.</li>
             <li>Protege idosos, crianças e grupos vulneráveis.</li>
         </ul>
-
+        <a [routerLink]="['/noticia', 2]">Ler mais</a>
     </article>
 
-    <hr>
-
     <article class="noticia">
-
+        <span class="categoria-tag">Saúde Pública</span>
         <h2>Vacinação contra Influenza ampliada para toda a população</h2>
 
         <p>
@@ -71,6 +68,6 @@
             <li>Diminui a circulação do vírus.</li>
             <li>Protege grupos mais vulneráveis.</li>
         </ul>
-
+        <a [routerLink]="['/noticia', 3]">Ler mais</a>
     </article>
 </main>
