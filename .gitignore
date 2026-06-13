@@ -1,0 +1,11 @@
+# Angular
+portal-noticias/node_modules/
+portal-noticias/.angular/
+portal-noticias/dist/
+portal-noticias/out-tsc/
+
+# VS Code
+.vscode/
+
+# Logs
+npm-debug.log*
