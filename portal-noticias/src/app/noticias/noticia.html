@@ -1,0 +1,32 @@
+<main class="pagina-noticia">
+
+  <div *ngIf="noticia; else naoEncontrada">
+
+    <span class="categoria-tag">{{ noticia.categoria }}</span>
+
+    <h1>{{ noticia.titulo }}</h1>
+
+    <p class="resumo">{{ noticia.resumo }}</p>
+
+    <img [src]="noticia.imagem" [alt]="noticia.titulo">
+
+    <p *ngFor="let paragrafo of noticia.texto">
+      {{ paragrafo }}
+    </p>
+
+    <h2>Importância</h2>
+
+    <ul>
+      <li *ngFor="let item of noticia.importancia">
+        {{ item }}
+      </li>
+    </ul>
+
+  </div>
+
+  <ng-template #naoEncontrada>
+    <h1>Notícia não encontrada</h1>
+    <p>ID recebido: {{ id }}</p>
+  </ng-template>
+
+</main>
