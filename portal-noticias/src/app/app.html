@@ -1,149 +1,21 @@
 <header class="header">
-  <img src="/images/ConectaNews.png" 
-  alt="Conecta News" 
-  class="logo">
+  <a routerLink="/">
+    <img src="/images/ConectaNews.png"
+      alt="Conecta News"
+      class="logo">
+  </a>
 
   <nav class="menu">
-    <a href="#esportes">Esportes</a>
-    <a href="#tecnologia">Ciência e Tecnologia</a>
-    <a href="#utilidade">Utilidade Pública</a>
-    <a href="#cultura">Cultura e Entretenimento</a>
+    <a routerLink="/esportes">Esportes</a>
+    <a routerLink="/tecnologia">Ciência e Tecnologia</a>
+    <a routerLink="/utilidade-publica">Utilidade Pública</a>
+    <a routerLink="/entretenimento">Cultura e Entretenimento</a>
+    <a routerLink="/home"><span class="material-icons">home</span></a>
   </nav>
 </header>
 
-<main class="container">
-
-  <section class="destaque">
-    <div>
-      <span class="tag">Em destaque</span>
-      <h2>Informação organizada para facilitar o acesso às notícias</h2>
-      <p>
-        Portal desenvolvido para reunir conteúdos jornalísticos em categorias,
-        facilitando a navegação, a leitura e a encontrabilidade da informação.
-      </p>
-    </div>
-  </section>
-
-  <section id="esportes" class="categoria">
-    <div class="titulo-categoria">
-      <h2>Esportes</h2>
-      <p>Responsável: Cristiane Aparecida Barros</p>
-    </div>
-
-    <div class="grid-noticias">
-      <article class="card">
-        <span class="categoria-tag">Esportes</span>
-        <h3>Notícia 1</h3>
-        <p>Resumo da notícia esportiva com as principais informações do acontecimento.</p>
-        <a href="#">Ler mais</a>
-      </article>
-
-      <article class="card">
-        <span class="categoria-tag">Esportes</span>
-        <h3>Notícia 2</h3>
-        <p>Resumo da segunda notícia da categoria de esportes.</p>
-        <a href="#">Ler mais</a>
-      </article>
-
-      <article class="card">
-        <span class="categoria-tag">Esportes</span>
-        <h3>Notícia 3</h3>
-        <p>Resumo da terceira notícia da categoria de esportes.</p>
-        <a href="#">Ler mais</a>
-      </article>
-    </div>
-  </section>
-
-  <section id="tecnologia" class="categoria">
-    <div class="titulo-categoria">
-      <h2>Ciência e Tecnologia</h2>
-      <p>Responsável: Cristiane Aparecida Barros</p>
-    </div>
-
-    <div class="grid-noticias">
-      <article class="card">
-        <span class="categoria-tag">Tecnologia</span>
-        <h3>Notícia 1</h3>
-        <p>Resumo da notícia sobre ciência e tecnologia.</p>
-        <a href="#">Ler mais</a>
-      </article>
-
-      <article class="card">
-        <span class="categoria-tag">Tecnologia</span>
-        <h3>Notícia 2</h3>
-        <p>Resumo da segunda notícia sobre ciência e tecnologia.</p>
-        <a href="#">Ler mais</a>
-      </article>
-
-      <article class="card">
-        <span class="categoria-tag">Tecnologia</span>
-        <h3>Notícia 3</h3>
-        <p>Resumo da terceira notícia sobre ciência e tecnologia.</p>
-        <a href="#">Ler mais</a>
-      </article>
-    </div>
-  </section>
-
-  <section id="utilidade" class="categoria">
-    <div class="titulo-categoria">
-      <h2>Utilidade Pública</h2>
-      <p>Responsável: Jackeline de Paula Lima</p>
-    </div>
-
-    <div class="grid-noticias">
-      <article class="card">
-        <span class="categoria-tag">Utilidade Pública</span>
-        <h3>Notícia 1</h3>
-        <p>Resumo da notícia de utilidade pública.</p>
-        <a href="#">Ler mais</a>
-      </article>
-
-      <article class="card">
-        <span class="categoria-tag">Utilidade Pública</span>
-        <h3>Notícia 2</h3>
-        <p>Resumo da segunda notícia de utilidade pública.</p>
-        <a href="#">Ler mais</a>
-      </article>
-
-      <article class="card">
-        <span class="categoria-tag">Utilidade Pública</span>
-        <h3>Notícia 3</h3>
-        <p>Resumo da terceira notícia de utilidade pública.</p>
-        <a href="#">Ler mais</a>
-      </article>
-    </div>
-  </section>
-
-  <section id="cultura" class="categoria">
-    <div class="titulo-categoria">
-      <h2>Cultura e Entretenimento</h2>
-      <p>Responsável: Jackeline de Paula Lima</p>
-    </div>
-
-    <div class="grid-noticias">
-      <article class="card">
-        <span class="categoria-tag">Cultura</span>
-        <h3>Festival de Inverno de São Roque 2026</h3>
-        <p>Evento cultural reúne apresentações, lazer e entretenimento para a população.</p>
-        <a href="#">Ler mais</a>
-      </article>
-
-      <article class="card">
-        <span class="categoria-tag">Cultura</span>
-        <h3>Bienal Internacional do Livro de São Paulo 2026</h3>
-        <p>Evento literário já tem data confirmada e promove o incentivo à leitura.</p>
-        <a href="#">Ler mais</a>
-      </article>
-
-      <article class="card">
-        <span class="categoria-tag">Cultura</span>
-        <h3>Notícia 3</h3>
-        <p>Resumo da terceira notícia de cultura e entretenimento.</p>
-        <a href="#">Ler mais</a>
-      </article>
-    </div>
-  </section>
-
+<main>
+  <router-outlet></router-outlet>
 </main>
 
 <footer class="rodape">
