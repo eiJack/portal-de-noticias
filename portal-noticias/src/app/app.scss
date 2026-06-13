@@ -1,0 +1,192 @@
+// --------- config geral -----------
+* {
+  box-sizing: border-box;
+}
+
+:host {
+  display: block;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f4f6f8;
+  color: #222;
+}
+
+// --------- cabeçalho -----------
+.header {
+  background: white;
+  text-align: center;
+  padding: 12px 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+.logo {
+  width: 370px;
+  max-width: 90%;
+  height: auto;
+}
+
+// --------- Menu -----------
+.menu {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: #9a6666;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+  padding: 8px 20px;
+  flex-wrap: nowrap;
+  min-height: 45px;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 17px;
+  padding: 6px 10px;
+  border-radius: 18px;
+  transition: 0.3s;
+}
+
+.menu a:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+// --------- conteudo principal -----------
+.container {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 32px 20px;
+}
+
+.destaque {
+  background: white;
+  border-left: 6px solid #6b5b57;
+  padding: 28px;
+  border-radius: 16px;
+  margin-bottom: 36px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+}
+
+.categoria {
+  margin-bottom: 44px;
+}
+
+.titulo-categoria {
+  margin-bottom: 18px;
+}
+
+.titulo-categoria h2 {
+  color: #102a43;
+  font-size: 28px;
+  margin-bottom: 4px;
+}
+
+.titulo-categoria p {
+  color: #627d98;
+  margin: 0;
+}
+
+// --------- cards -----------
+.grid-noticias {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.card {
+  background: white;
+  padding: 22px;
+  border-radius: 16px;
+  min-height: 230px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.06);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+}
+
+.categoria-tag {
+  display: inline-block;
+  background: #eee8e6;
+  color: #6b5b57;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card h3 {
+  color: #102a43;
+  margin: 6px 0 10px;
+  font-size: 21px;
+}
+
+.card p {
+  color: #52616b;
+  line-height: 1.5;
+}
+
+.card a {
+  color: #6b5b57;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.card a:hover {
+  text-decoration: underline;
+}
+
+/* ===== Rodapé ===== */
+.rodape {
+  background: #8c6863;
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.rodape h3 {
+  margin: 0;
+  font-size: 28px;
+}
+
+.rodape p {
+  margin: 8px 0;
+  opacity: 0.95;
+}
+
+.linha {
+  width: 150px;
+  height: 1px;
+  background: rgba(255,255,255,0.4);
+  margin: 15px auto;
+}
+
+// --------- responsividade -----------
+@media (max-width: 900px) {
+  .grid-noticias {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .logo {
+    width: 280px;
+  }
+}
+
+@media (max-width: 600px) {
+  .grid-noticias {
+    grid-template-columns: 1fr;
+  }
+
+  .menu {
+    justify-content: flex-start;
+    overflow-x: auto;
+  }
+
+  .logo {
+    width: 240px;
+  }
+}
