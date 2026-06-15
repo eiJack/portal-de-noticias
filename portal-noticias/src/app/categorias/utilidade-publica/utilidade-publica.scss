@@ -77,3 +77,29 @@ h1 {
 .noticia a:hover {
   background: #845757;
 }
+
+//---------------bradcrumb-----------
+.breadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+  margin-bottom: 18px;
+  font-size: 14px;
+  color: #627d98;
+}
+
+.breadcrumb a {
+  color: #9a6666;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+.breadcrumb span:last-child {
+  color: #102a43;
+  font-weight: 600;
+}
