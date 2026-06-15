@@ -2,17 +2,54 @@
 
   <div *ngIf="noticia; else naoEncontrada">
 
+    <div class="breadcrumb">
+      <a routerLink="/">Home</a>
+      <span>›</span>
+      <a routerLink="/utilidade-publica">{{ noticia.secao }}</a>
+      <span>›</span>
+      <span>{{ noticia.titulo }}</span>
+    </div>
+
     <span class="categoria-tag">{{ noticia.categoria }}</span>
 
     <h1>{{ noticia.titulo }}</h1>
 
     <p class="resumo">{{ noticia.resumo }}</p>
 
-    <img [src]="noticia.imagem" [alt]="noticia.titulo">
+    <img
+      class="imagem-noticia"
+      [src]="noticia.imagens[0]"
+      [alt]="noticia.titulo"
+    >
 
-    <p *ngFor="let paragrafo of noticia.texto">
-      {{ paragrafo }}
-    </p>
+    <p>{{ noticia.texto[0] }}</p>
+
+    <div class="galeria-noticia" *ngIf="noticia.imagens[1] && noticia.imagens[2]">
+      <img
+        [src]="noticia.imagens[1]"
+        [alt]="noticia.titulo"
+      >
+
+      <img
+        [src]="noticia.imagens[2]"
+        [alt]="noticia.titulo"
+      >
+    </div>
+
+    <p>{{ noticia.texto[1] }}</p>
+
+    <p>{{ noticia.texto[2] }}</p>
+
+    <p *ngIf="noticia.texto[3]">{{ noticia.texto[3] }}</p>
+
+    <p *ngIf="noticia.texto[4]">{{ noticia.texto[4] }}</p>
+
+    <img
+      *ngIf="noticia.imagens[3]"
+      class="imagem-secundaria"
+      [src]="noticia.imagens[3]"
+      [alt]="noticia.titulo"
+    >
 
     <h2>Importância</h2>
 
