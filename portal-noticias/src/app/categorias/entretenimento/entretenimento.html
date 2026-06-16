@@ -7,44 +7,34 @@
 
   <h1>Cultura e Entretenimento</h1>
 
-  <article class="noticia">
-    <span class="categoria-tag">Cultura Local</span>
+  <section class="hero-entretenimento">
+    <img src="/images/cultura-festival.jpg" alt="Festival de Inverno de São Roque">
 
-    <h2>Festival de Inverno de São Roque 2026 reúne música, arte e lazer</h2>
+    <div>
+      <span>Cultura Local</span>
+      <h2>Festival de Inverno de São Roque 2026 reúne música, arte e lazer</h2>
+      <p>
+        Evento cultural movimenta a cidade com apresentações, gastronomia e atividades para moradores e visitantes.
+      </p>
+      <a [routerLink]="['/noticia', 4]">Ler mais</a>
+    </div>
+  </section>
 
-    <p>
-      O Festival de Inverno de São Roque 2026 promete movimentar a cidade com
-      apresentações musicais, atividades culturais, gastronomia e opções de lazer
-      para moradores e visitantes.
-    </p>
+  <section class="grade-revista">
+    <article>
+      <img src="/images/cultura-livro.png" alt="Bienal Internacional do Livro">
+      <span>Literatura</span>
+      <h3>Bienal Internacional do Livro incentiva leitura e aproxima público da literatura</h3>
+      <p>Evento reúne autores, editoras, estudantes e leitores em uma grande programação cultural.</p>
+      <a [routerLink]="['/noticia', 5]">Ler mais</a>
+    </article>
 
-    <a [routerLink]="['/noticia', 4]">Ler mais</a>
-  </article>
-
-  <article class="noticia">
-    <span class="categoria-tag">Literatura</span>
-
-    <h2>Bienal Internacional do Livro incentiva leitura e aproxima público da literatura</h2>
-
-    <p>
-      A Bienal Internacional do Livro é um dos principais eventos literários do país
-      e reúne editoras, autores, estudantes, professores e leitores em uma grande
-      programação cultural.
-    </p>
-
-    <a [routerLink]="['/noticia', 5]">Ler mais</a>
-  </article>
-
-  <article class="noticia">
-    <span class="categoria-tag">Arte Urbana</span>
-
-    <h2>Arte urbana transforma espaços públicos em galerias a céu aberto</h2>
-
-    <p>
-      Projetos de arte urbana têm transformado ruas, praças e fachadas em espaços
-      de expressão artística, aproximando a população da cultura visual.
-    </p>
-
-    <a [routerLink]="['/noticia', 6]">Ler mais</a>
-  </article>
+    <article>
+      <img src="/images/cultura-arte.jpeg" alt="Arte Urbana">
+      <span>Arte Urbana</span>
+      <h3>Arte urbana transforma espaços públicos em galerias a céu aberto</h3>
+      <p>Intervenções artísticas aproximam a população da cultura e renovam espaços urbanos.</p>
+      <a [routerLink]="['/noticia', 6]">Ler mais</a>
+    </article>
+  </section>
 </main>

@@ -1,79 +1,66 @@
 <main>
-    <div class="breadcrumb">
-        <a routerLink="/">Home</a>
-        <span>›</span>
-        <span>Utilidade Pública</span>
-    </div>
+  <div class="breadcrumb">
+    <a routerLink="/">Home</a>
+    <span>›</span>
+    <span>Utilidade Pública</span>
+  </div>
 
-    <h1>Utilidade Pública</h1>
+  <h1>Utilidade Pública</h1>
 
-    <article class="noticia">
-        <span class="categoria-tag">Serviços ao Cidadão</span>
-        <h2>PAT São Roque amplia divulgação de oportunidades de emprego</h2>
+  <section class="layout-categoria">
+    <article class="destaque-principal">
+      <img src="/images/frio.jpg" alt="Alerta de frio intenso">
 
-        <p>
-            O Posto de Atendimento ao Trabalhador (PAT) de São Roque continua
-            ampliando a divulgação de vagas de emprego na região.
-        </p>
-
-        <p>
-            As oportunidades abrangem áreas como comércio, indústria,
-            logística e serviços, com mais de 90 vagas disponíveis em algumas
-            atualizações recentes.
-        </p>
-
-        <h3>Categoria</h3>
-        <p>Serviços ao Cidadão</p>
-
-        <h3>Importância</h3>
-        <ul>
-            <li>Mantém a população informada sobre oportunidades de trabalho.</li>
-            <li>Facilita o acesso ao mercado de emprego.</li>
-            <li>Contribui para a redução do desemprego local.</li>
-        </ul>
-        <a [routerLink]="['/noticia', 1]">Ler mais</a>
-
-    </article>
-
-    <article class="noticia">
-        <span class="categoria-tag">Defesa Civil e Saúde</span>
+      <div class="conteudo-destaque">
+        <span>Defesa Civil e Saúde</span>
         <h2>Alerta de frio intenso no Sul e Sudeste</h2>
-
-        <p>
-            O Instituto Nacional de Meteorologia (INMET) mantém alertas para
-            a ocorrência de baixas temperaturas em estados das regiões Sul e
-            Sudeste do país.
-        </p>
-
-        <h3>Categoria</h3>
-        <p>Defesa Civil e Saúde</p>
-
-        <h3>Importância</h3>
-        <ul>
-            <li>Orienta a população sobre riscos das baixas temperaturas.</li>
-            <li>Protege idosos, crianças e grupos vulneráveis.</li>
-        </ul>
+        <p>O INMET mantém alerta para baixas temperaturas em estados do Sul e Sudeste.</p>
         <a [routerLink]="['/noticia', 2]">Ler mais</a>
+      </div>
     </article>
 
-    <article class="noticia">
-        <span class="categoria-tag">Saúde Pública</span>
-        <h2>Vacinação contra Influenza ampliada para toda a população</h2>
+    <div class="coluna-lateral">
+      <article class="noticia-lateral">
+        <img src="/images/vagas.jpg" alt="Oportunidades de emprego">
+        <div>
+          <span>Serviços ao Cidadão</span>
+          <h3>PAT São Roque amplia divulgação de oportunidades de emprego</h3>
+          <a [routerLink]="['/noticia', 1]">Ler mais</a>
+        </div>
+      </article>
 
-        <p>
-            Diversos estados ampliaram a campanha de vacinação contra a
-            Influenza para toda a população acima de seis meses de idade.
-        </p>
+      <article class="noticia-lateral">
+        <img src="/images/vacinacao.jpg" alt="Vacinação contra Influenza">
+        <div>
+          <span>Saúde Pública</span>
+          <h3>Vacinação contra Influenza é ampliada para toda a população</h3>
+          <a [routerLink]="['/noticia', 3]">Ler mais</a>
+        </div>
+      </article>
+    </div>
+  </section>
 
-        <h3>Categoria</h3>
-        <p>Saúde Pública</p>
+  <section class="ultimas">
+    <h2>Últimas Notícias</h2>
 
-        <h3>Importância</h3>
-        <ul>
-            <li>Reduz internações.</li>
-            <li>Diminui a circulação do vírus.</li>
-            <li>Protege grupos mais vulneráveis.</li>
-        </ul>
+    <article class="noticia-lista">
+      <img src="/images/carteira-de-trabalho.jpg" alt="Emprego">
+      <div>
+        <span>Serviços ao Cidadão</span>
+        <h3>Oportunidades de emprego são atualizadas semanalmente em São Roque</h3>
+        <p>As vagas contemplam áreas como comércio, indústria, logística e serviços.</p>
+        <a [routerLink]="['/noticia', 1]">Ler mais</a>
+      </div>
+    </article>
+
+    <article class="noticia-lista">
+      <img src="/images/ubs-vacinacao.jpg" alt="Vacinação">
+      <div>
+        <span>Saúde Pública</span>
+        <h3>Campanha de vacinação busca reduzir internações por Influenza</h3>
+        <p>A imunização protege principalmente crianças, idosos e grupos mais vulneráveis.</p>
         <a [routerLink]="['/noticia', 3]">Ler mais</a>
+      </div>
     </article>
+  </section>
 </main>
