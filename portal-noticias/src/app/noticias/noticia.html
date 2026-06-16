@@ -5,7 +5,7 @@
     <div class="breadcrumb">
       <a routerLink="/">Home</a>
       <span>›</span>
-      <a routerLink="/utilidade-publica">{{ noticia.secao }}</a>
+      <a [routerLink]="noticia.rotaSecao">{{ noticia.secao }}</a>
       <span>›</span>
       <span>{{ noticia.titulo }}</span>
     </div>
