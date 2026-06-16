@@ -26,7 +26,7 @@
 }
 
 .categoria {
-  margin-bottom: 44px;
+  margin-bottom: 10px;
 }
 
 .titulo-categoria {
@@ -168,7 +168,7 @@
   color: #8a8a8a;
 }
 
-//---------noticias----------
+//---------noticias utilidades publicas----------
 .layout-noticias {
   display: grid;
   grid-template-columns: 1.4fr 1fr;
@@ -276,3 +276,47 @@
   }
 }
 
+//------------- noticias cultura -------------
+.grid-cultura {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+.card-cultura {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.card-cultura img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  display: block;
+}
+
+.card-cultura h3,
+.card-cultura a {
+  display: block;
+  padding: 0 10px;
+}
+
+.card-cultura h3 {
+  color: #102a43;
+  font-size: 20px;
+  line-height: 1.25;
+  margin: 10px 0 8px;
+  font-weight: 700;
+}
+
+.card-cultura a {
+  color: #9a6666;
+  font-weight: bold;
+  text-decoration: none;
+  margin-bottom: 12px;
+}
+
+.card-cultura a:hover {
+  text-decoration: underline;
+}

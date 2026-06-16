@@ -27,6 +27,7 @@
 
   </section>
 
+  <!-- ------------ esportes ------------ -->
   <section id="esportes" class="categoria">
     <div class="titulo-categoria">
       <h2>Esportes</h2>
@@ -57,6 +58,7 @@
     </div>
   </section>
 
+  <!-- ------------ tecnologia ------------ -->
   <section id="tecnologia" class="categoria">
     <div class="titulo-categoria">
       <h2>Ciência e Tecnologia</h2>
@@ -87,6 +89,7 @@
     </div>
   </section>
 
+  <!-- ------------ utilidade publica ------------ -->
   <section id="utilidade" class="categoria">
     <div class="titulo-categoria">
       <h2>Utilidade Pública</h2>
@@ -127,32 +130,30 @@
     </div>
   </section>
 
+  <!-- ------------ cultura e entreterimento ------------ -->
   <section id="cultura" class="categoria">
     <div class="titulo-categoria">
       <h2>Cultura e Entretenimento</h2>
       <p>Responsável: Jackeline de Paula Lima</p>
     </div>
 
-    <div class="grid-noticias">
-      <article class="card">
-        <span class="categoria-tag">Cultura e Entretenimento</span>
-        <h3>Festival de Inverno de São Roque 2026</h3>
-        <p>Evento cultural reúne apresentações, lazer e entretenimento para a população.</p>
-        <a routerLink="/entretenimento">Ler mais</a>
+    <div class="grid-cultura">
+      <article class="card-cultura">
+        <img src="/images/cultura-festival.jpg" alt="Festival de Inverno de São Roque">
+        <h3>Festival de Inverno de São Roque 2026 reúne música, arte e lazer</h3>
+        <a [routerLink]="['/noticia', 4]">Ler mais</a>
       </article>
 
-      <article class="card">
-        <span class="categoria-tag">Literatura</span>
-        <h3>Bienal Internacional do Livro de São Paulo 2026</h3>
-        <p>Evento literário já tem data confirmada e promove o incentivo à leitura.</p>
-        <a routerLink="/entretenimento">Ler mais</a>
+      <article class="card-cultura">
+        <img src="/images/cultura-livro.png" alt="Bienal Internacional do Livro">
+        <h3>Bienal Internacional do Livro incentiva leitura e aproxima público da literatura</h3>
+        <a [routerLink]="['/noticia', 5]">Ler mais</a>
       </article>
 
-      <article class="card">
-        <span class="categoria-tag">Arte Urbana</span>
-        <h3>Festa da Luz 2026 transforma o centro de Belo Horizonte</h3>
-        <p>Festa da Luz 2026 transforma o centro de Belo Horizonte em galeria de arte a céu aberto</p>
-        <a routerLink="/entretenimento">Ler mais</a>
+      <article class="card-cultura">
+        <img src="/images/cultura-arte.jpeg" alt="Arte urbana">
+        <h3>Festa da Luz 2026 transforma o centro de Belo Horizonte em galeria de arte a céu aberto</h3>
+        <a [routerLink]="['/noticia', 6]">Ler mais</a>
       </article>
     </div>
   </section>
