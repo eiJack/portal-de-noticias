@@ -3,6 +3,7 @@ export const noticias = [
     id: 1,
     secao: 'Utilidade Pública',
     categoria: 'Serviços ao Cidadão',
+    rotaSecao: '/utilidade-publica',
     titulo: 'PAT São Roque amplia divulgação de oportunidades de emprego',
     resumo: 'O PAT continua atualizando semanalmente oportunidades em diversas áreas.',
     texto: [
@@ -32,6 +33,7 @@ export const noticias = [
     id: 2,
     secao: 'Utilidade Pública',
     categoria: 'Defesa Civil e Saúde',
+    rotaSecao: '/utilidade-publica',
     titulo: 'Alerta de frio intenso no Sul e Sudeste',
     resumo: 'O INMET mantém alerta para baixas temperaturas em estados do Sul e Sudeste.',
     texto: [
@@ -61,6 +63,7 @@ export const noticias = [
     id: 3,
     secao: 'Utilidade Pública',
     categoria: 'Saúde Pública',
+    rotaSecao: '/utilidade-publica',
     titulo: 'Vacinação contra Influenza ampliada para toda a população',
     resumo: 'Diversos estados ampliaram a campanha de vacinação contra a Influenza.',
     texto: [
@@ -83,6 +86,78 @@ export const noticias = [
       '/images/vacinacao.jpg',
       '/images/ubs-vacinacao.jpg',
       '/images/cartao-vacina.jpg'
+    ]
+  },
+
+  // ----------------- entreterimento ------------
+  
+  {
+    id: 4,
+    secao: 'Cultura e Entretenimento',
+    categoria: 'Cultura Local',
+    rotaSecao: '/entretenimento',
+    titulo: 'Festival de Inverno de São Roque 2026 reúne música, arte e lazer',
+    resumo: 'Evento cultural deve reunir apresentações, gastronomia e lazer para a população.',
+    texto: [
+      'O Festival de Inverno de São Roque 2026 promete movimentar a cidade com uma programação voltada à cultura, ao lazer e ao entretenimento.',
+      'A proposta do evento é reunir apresentações musicais, atividades artísticas, gastronomia e espaços de convivência para moradores e visitantes.',
+      'Além de oferecer opções de lazer, o festival contribui para valorizar artistas locais e fortalecer o turismo cultural da região.',
+      'Eventos desse tipo também movimentam o comércio, atraem visitantes e ampliam o acesso da população a atividades culturais.',
+      'A programação completa deve ser divulgada pelos canais oficiais próximos à realização do evento.'
+    ],
+    importancia: [
+      'Valoriza a cultura local.',
+      'Movimenta o turismo e o comércio.',
+      'Oferece lazer e entretenimento à população.'
+    ],
+    imagens: [
+      '/images/cultura-festival.jpg'
+    ]
+  },
+  {
+    id: 5,
+    secao: 'Cultura e Entretenimento',
+    categoria: 'Literatura',
+    rotaSecao: '/entretenimento',
+    titulo: 'Bienal Internacional do Livro incentiva leitura e aproxima público da literatura',
+    resumo: 'Evento literário reúne editoras, autores e leitores em uma grande programação cultural.',
+    texto: [
+      'A Bienal Internacional do Livro de São Paulo 2026 será um dos principais eventos literários do país.',
+      'O encontro reúne editoras, escritores, estudantes, professores e leitores em uma programação voltada ao incentivo à leitura.',
+      'Além da venda de livros, a Bienal costuma promover palestras, sessões de autógrafos, debates e atividades educativas.',
+      'O evento contribui para aproximar o público do universo literário e valorizar a produção cultural brasileira.',
+      'A participação de escolas e famílias também fortalece o hábito da leitura entre crianças e jovens.'
+    ],
+    importancia: [
+      'Estimula o hábito da leitura.',
+      'Aproxima autores e leitores.',
+      'Fortalece a educação e a cultura.'
+    ],
+    imagens: [
+      '/images/cultura-livro.png'
+    ]
+  },
+  {
+    id: 6,
+    secao: 'Cultura e Entretenimento',
+    categoria: 'Arte Urbana',
+    rotaSecao: '/entretenimento',
+    titulo: 'Arte urbana transforma espaços públicos em galerias a céu aberto',
+    resumo: 'Intervenções artísticas aproximam a população da cultura e renovam espaços urbanos.',
+    texto: [
+      'Projetos de arte urbana têm transformado ruas, praças, muros e fachadas em espaços de expressão artística.',
+      'As intervenções aproximam a população da cultura visual e tornam o ambiente urbano mais criativo e acolhedor.',
+      'Além do impacto estético, a arte urbana pode estimular reflexões sociais, valorizar artistas e fortalecer a identidade dos bairros.',
+      'Iniciativas desse tipo também contribuem para revitalizar áreas públicas e incentivar a ocupação cultural da cidade.',
+      'A presença da arte no cotidiano amplia o acesso à cultura e mostra que espaços públicos também podem ser locais de criação.'
+    ],
+    importancia: [
+      'Valoriza espaços públicos.',
+      'Incentiva artistas urbanos.',
+      'Aproxima a arte da população.'
+    ],
+    imagens: [
+      '/images/cultura-arte.jpeg'
     ]
   }
 ];
