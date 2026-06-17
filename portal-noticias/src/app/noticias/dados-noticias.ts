@@ -178,6 +178,8 @@ export const noticias = [
   secao: 'Esportes',
   categoria: 'Futebol',
   rotaSecao: '/esportes',
+  data: '15 de Junho de 2026',
+  autor: 'Cristiane Aparecida Barros Pereira',  
   titulo: 'Qual é o próximo jogo do Brasil na Copa? Veja data e horário',
   resumo: 'Seleção brasileira enfrenta o Haiti pela segunda rodada da Copa do Mundo.',
   texto: [
@@ -203,6 +205,8 @@ export const noticias = [
   secao: 'Esportes',
   categoria: 'Futebol Feminino',
   rotaSecao: '/esportes',
+  data: '15 de Junho de 2026',
+  autor: 'Cristiane Aparecida Barros Pereira',
   titulo: 'Brasil segura pressão e vence Estados Unidos em amistoso',
   resumo: 'Seleção feminina derrotou as norte-americanas por 2 a 1.',
   texto: [
@@ -224,6 +228,8 @@ export const noticias = [
   secao: 'Esportes',
   categoria: 'Ginástica',
   rotaSecao: '/esportes',
+  data: '15 de Junho de 2026',
+  autor: 'Cristiane Aparecida Barros Pereira',
   titulo: 'Pan-Americanos de Ginástica em 2026 serão no Brasil',
   resumo: 'País sediará competições adultas e juvenis de ginástica artística e rítmica.',
   texto: [
@@ -249,6 +255,8 @@ export const noticias = [
   secao: 'Ciência e Tecnologia',
   categoria: 'Infraestrutura Científica',
   rotaSecao: '/tecnologia',
+  data: '15 de Junho de 2026',
+  autor: 'Cristiane Aparecida Barros Pereira',
   titulo: 'Nova infraestrutura computacional amplia acesso à ciência de ponta em Minas Gerais',
   resumo: 'Centro de Computação de Alto Desempenho do Cefet-MG fortalece pesquisas em inteligência artificial, análise de dados e inovação tecnológica.',
   texto: [
@@ -272,6 +280,8 @@ export const noticias = [
   secao: 'Ciência e Tecnologia',
   categoria: 'Tecnologia Nuclear',
   rotaSecao: '/tecnologia',
+  data: '15 de Junho de 2026',
+  autor: 'Cristiane Aparecida Barros Pereira',
   titulo: 'Ciência nuclear brasileira combate poluição por microplásticos',
   resumo: 'Tecnologia desenvolvida pelo Ipen utiliza aceleradores de elétrons para descontaminar águas e combater microplásticos.',
   texto: [
@@ -295,6 +305,8 @@ export const noticias = [
   secao: 'Ciência e Tecnologia',
   categoria: 'Inteligência Artificial',
   rotaSecao: '/tecnologia',
+  data: '15 de Junho de 2026',
+  autor: 'Cristiane Aparecida Barros Pereira',
   titulo: 'Pesquisadores do Impa desenvolvem IA capaz de prever chuvas com antecedência',
   resumo: 'Modelo Tupann utiliza imagens de satélite e inteligência artificial para antecipar eventos climáticos extremos.',
   texto: [

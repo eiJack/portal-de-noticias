@@ -10,7 +10,7 @@ O objetivo do portal é disponibilizar notícias organizadas por categorias, pro
 
 ## Integrantes
 
-* **Cristiane Aparecida Barros**
+* **Cristiane Aparecida Barros Pereira**
 * **Jackeline de Paula Lima**
 
 ---
@@ -33,19 +33,19 @@ O portal é composto por quatro categorias principais, contendo três notícias 
 
 ### Esportes
 
-Responsável: **Cristiane Aparecida Barros**
+Responsável: **Cristiane Aparecida Barros Pereira**
 
-* Notícia 1
-* Notícia 2
-* Notícia 3
+* Notícia 1: Qual é o próximo jogo do Brasil na Copa? Veja data e horário
+* Notícia 2: Brasil segura pressão e vence Estados Unidos em amistoso
+* Notícia 3: Pan-Americanos de Ginástica em 2026 serão no Brasil
 
 ### Ciência e Tecnologia
 
-Responsável: **Cristiane Aparecida Barros**
+Responsável: **Cristiane Aparecida Barros Pereira**
 
-* Notícia 1
-* Notícia 2
-* Notícia 3
+* Notícia 1: Nova infraestrutura computacional amplia acesso à ciência de ponta em Minas Gerais
+* Notícia 2: Ciência nuclear brasileira combate poluição por microplásticos
+* Notícia 3: Pesquisadores do Impa desenvolvem modelo de IA que prevê chuvas
 
 ### Utilidade Pública
 
@@ -53,7 +53,7 @@ Responsável: **Jackeline de Paula Lima**
 
 * Notícia 1: PAT São Roque amplia divulgação de oportunidades de emprego
 * Notícia 2: Alerta de frio intenso no Sul e Sudeste
-* Notícia 3:Vacinação contra Influenza ampliada para toda a população
+* Notícia 3: Vacinação contra Influenza ampliada para toda a população
 
 ### Cultura e Entretenimento
 
