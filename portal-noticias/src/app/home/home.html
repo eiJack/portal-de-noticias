@@ -28,66 +28,62 @@
   </section>
 
   <!-- ------------ esportes ------------ -->
-  <section id="esportes" class="categoria">
-    <div class="titulo-categoria">
-      <h2>Esportes</h2>
-      <p>Responsável: Cristiane Aparecida Barros</p>
-    </div>
+<section id="esportes" class="categoria">
+  <div class="titulo-categoria">
+    <h2>Esportes</h2>
+    <p>Responsável: Cristiane Aparecida Barros</p>
+  </div>
 
-    <div class="grid-noticias">
-      <article class="card">
-        <span class="categoria-tag">Esportes</span>
-        <h3>Notícia 1</h3>
-        <p>Resumo da notícia esportiva com as principais informações do acontecimento.</p>
-        <a routerLink="#">Ler mais</a>
-      </article>
+  <div class="grid-cultura">
+    <article class="card-cultura">
+      <img src="/images/brasil-copa.jpg" alt="Brasil na Copa">
+      <h3>Qual é o próximo jogo do Brasil na Copa? Veja data e horário</h3>
+      <a [routerLink]="['/noticia', 7]">Ler mais</a>
+    </article>
 
-      <article class="card">
-        <span class="categoria-tag">Esportes</span>
-        <h3>Notícia 2</h3>
-        <p>Resumo da segunda notícia da categoria de esportes.</p>
-        <a routerLink="#">Ler mais</a>
-      </article>
+    <article class="card-cultura">
+      <img src="/images/brasil-feminino.jpg" alt="Brasil Feminino">
+      <h3>Brasil segura pressão e vence Estados Unidos em amistoso</h3>
+      <a [routerLink]="['/noticia', 8]">Ler mais</a>
+    </article>
 
-      <article class="card">
-        <span class="categoria-tag">Esportes</span>
-        <h3>Notícia 3</h3>
-        <p>Resumo da terceira notícia da categoria de esportes.</p>
-        <a routerLink="#">Ler mais</a>
-      </article>
-    </div>
-  </section>
+    <article class="card-cultura">
+      <img src="/images/ginastica-pan.jpg" alt="Ginástica">
+      <h3>Pan-Americanos de Ginástica em 2026 serão realizados no Brasil</h3>
+      <a [routerLink]="['/noticia', 9]">Ler mais</a>
+    </article>
+  </div>
+</section>
 
-  <!-- ------------ tecnologia ------------ -->
-  <section id="tecnologia" class="categoria">
-    <div class="titulo-categoria">
-      <h2>Ciência e Tecnologia</h2>
-      <p>Responsável: Cristiane Aparecida Barros</p>
-    </div>
+  <!-- ------------ ciência e tecnologia ------------ -->
+<section id="tecnologia" class="categoria">
+  <div class="titulo-categoria">
+    <h2>Ciência e Tecnologia</h2>
+    <p>Responsável: Cristiane Aparecida Barros</p>
+  </div>
 
-    <div class="grid-noticias">
-      <article class="card">
-        <span class="categoria-tag">Tecnologia</span>
-        <h3>Notícia 1</h3>
-        <p>Resumo da notícia sobre ciência e tecnologia.</p>
-        <a routerLink="#">Ler mais</a>
-      </article>
+  <div class="grid-cultura">
 
-      <article class="card">
-        <span class="categoria-tag">Tecnologia</span>
-        <h3>Notícia 2</h3>
-        <p>Resumo da segunda notícia sobre ciência e tecnologia.</p>
-        <a routerLink="#">Ler mais</a>
-      </article>
+    <article class="card-cultura">
+      <img src="/images/ccad-cefet.jpg" alt="Centro de Computação">
+      <h3>Nova infraestrutura computacional amplia acesso à ciência de ponta em Minas Gerais</h3>
+      <a [routerLink]="['/noticia', 10]">Ler mais</a>
+    </article>
 
-      <article class="card">
-        <span class="categoria-tag">Tecnologia</span>
-        <h3>Notícia 3</h3>
-        <p>Resumo da terceira notícia sobre ciência e tecnologia.</p>
-        <a routerLink="#">Ler mais</a>
-      </article>
-    </div>
-  </section>
+    <article class="card-cultura">
+      <img src="/images/microplasticos.jpg" alt="Microplásticos">
+      <h3>Ciência nuclear brasileira combate poluição por microplásticos</h3>
+      <a [routerLink]="['/noticia', 11]">Ler mais</a>
+    </article>
+
+    <article class="card-cultura">
+      <img src="/images/tupann-ia.jpg" alt="Inteligência Artificial">
+      <h3>Pesquisadores do Impa desenvolvem modelo de IA que prevê chuvas</h3>
+      <a [routerLink]="['/noticia', 12]">Ler mais</a>
+    </article>
+
+  </div>
+</section>
 
   <!-- ------------ utilidade publica ------------ -->
   <section id="utilidade" class="categoria">

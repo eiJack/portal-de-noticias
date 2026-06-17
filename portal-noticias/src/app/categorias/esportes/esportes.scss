@@ -1,0 +1,135 @@
+:host {
+  display: block;
+  background: #f4f6f8;
+  min-height: 100vh;
+}
+
+main {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 18px 20px 40px;
+}
+
+.breadcrumb {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 18px;
+  font-size: 14px;
+  color: #627d98;
+}
+
+.breadcrumb a {
+  color: #9a6666;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+h1 {
+  color: #102a43;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.hero-entretenimento {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 28px;
+  background: white;
+  border-radius: 18px;
+  overflow: hidden;
+  margin-bottom: 34px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.06);
+}
+
+.hero-entretenimento img {
+  width: 100%;
+  height: 390px;
+  object-fit: cover;
+}
+
+.hero-entretenimento div {
+  padding: 34px 28px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero-entretenimento span,
+.grade-revista span {
+  color: #9a6666;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+.hero-entretenimento h2 {
+  color: #102a43;
+  font-size: 32px;
+  margin: 10px 0 14px;
+  line-height: 1.15;
+}
+
+.hero-entretenimento p,
+.grade-revista p {
+  color: #52616b;
+  line-height: 1.6;
+}
+
+.hero-entretenimento a,
+.grade-revista a {
+  color: #9a6666;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.grade-revista {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 26px;
+}
+
+.grade-revista article {
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.06);
+}
+
+.grade-revista img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+}
+
+.grade-revista article span,
+.grade-revista article h3,
+.grade-revista article p,
+.grade-revista article a {
+  margin-left: 22px;
+  margin-right: 22px;
+}
+
+.grade-revista h3 {
+  color: #102a43;
+  font-size: 24px;
+  margin-top: 8px;
+}
+
+.grade-revista a {
+  display: inline-block;
+  margin-bottom: 22px;
+}
+
+@media (max-width: 850px) {
+  .hero-entretenimento,
+  .grade-revista {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-entretenimento img {
+    height: 260px;
+  }
+
+  .hero-entretenimento h2 {
+    font-size: 25px;
+  }
+}

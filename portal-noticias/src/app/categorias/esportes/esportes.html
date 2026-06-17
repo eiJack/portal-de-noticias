@@ -1,0 +1,42 @@
+<main>
+  <div class="breadcrumb">
+    <a routerLink="/">Home</a>
+    <span>›</span>
+    <span>Esportes</span>
+  </div>
+
+  <h1>Esportes</h1>
+
+  <section class="hero-entretenimento">
+    <img src="/images/brasil-copa.jpg" alt="Seleção Brasileira">
+
+    <div>
+      <span>Futebol</span>
+      <h2>Qual é o próximo jogo do Brasil na Copa? Veja data e horário</h2>
+      <p>
+        Seleção brasileira enfrenta o Haiti pela segunda rodada da Copa do Mundo.
+      </p>
+      <a [routerLink]="['/noticia', 7]">Ler mais</a>
+    </div>
+  </section>
+
+  <section class="grade-revista">
+
+    <article>
+      <img src="/images/brasil-feminino.jpg" alt="Brasil Feminino">
+      <span>Futebol Feminino</span>
+      <h3>Brasil vence Estados Unidos em amistoso</h3>
+      <p>Seleção feminina derrota as norte-americanas por 2 a 1.</p>
+      <a [routerLink]="['/noticia', 8]">Ler mais</a>
+    </article>
+
+    <article>
+      <img src="/images/ginastica-pan.jpg" alt="Ginástica">
+      <span>Ginástica</span>
+      <h3>Pan-Americanos de Ginástica 2026 serão realizados no Brasil</h3>
+      <p>País foi escolhido para sediar importantes competições continentais.</p>
+      <a [routerLink]="['/noticia', 9]">Ler mais</a>
+    </article>
+
+  </section>
+</main>

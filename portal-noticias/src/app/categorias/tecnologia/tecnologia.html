@@ -1,0 +1,46 @@
+<main>
+  <div class="breadcrumb">
+    <a routerLink="/">Home</a>
+    <span>›</span>
+    <span>Ciência e Tecnologia</span>
+  </div>
+
+  <h1>Ciência e Tecnologia</h1>
+
+  <section class="hero-entretenimento">
+    <img src="/images/ccad-cefet.jpg" alt="Centro de Computação de Alto Desempenho">
+
+    <div>
+      <span>Infraestrutura Científica</span>
+      <h2>Nova infraestrutura computacional amplia acesso à ciência de ponta em Minas Gerais</h2>
+      <p>
+        Novo Centro de Computação de Alto Desempenho do Cefet-MG fortalece pesquisas em inteligência artificial, análise de dados e inovação tecnológica.
+      </p>
+      <a [routerLink]="['/noticia', 10]">Ler mais</a>
+    </div>
+  </section>
+
+  <section class="grade-revista">
+
+    <article>
+      <img src="/images/microplasticos.jpg" alt="Microplásticos">
+      <span>Tecnologia Nuclear</span>
+      <h3>Ciência nuclear brasileira combate poluição por microplásticos</h3>
+      <p>
+        Tecnologia desenvolvida pelo Ipen utiliza aceleradores de elétrons para descontaminar águas e combater poluentes.
+      </p>
+      <a [routerLink]="['/noticia', 11]">Ler mais</a>
+    </article>
+
+    <article>
+      <img src="/images/tupann-ia.jpg" alt="IA para previsão do tempo">
+      <span>Inteligência Artificial</span>
+      <h3>Pesquisadores do Impa desenvolvem modelo de IA que prevê chuvas</h3>
+      <p>
+        Sistema Tupann utiliza imagens de satélite para antecipar eventos climáticos extremos.
+      </p>
+      <a [routerLink]="['/noticia', 12]">Ler mais</a>
+    </article>
+
+  </section>
+</main>

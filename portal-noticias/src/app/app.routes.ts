@@ -6,6 +6,7 @@ import { TecnologiaComponent } from './categorias/tecnologia/tecnologia';
 import { UtilidadePublicaComponent } from './categorias/utilidade-publica/utilidade-publica';
 import { EntretenimentoComponent } from './categorias/entretenimento/entretenimento';
 
+
 import { NoticiaComponent } from './noticias/noticia';
 export const routes: Routes = [
   { path: '', component: HomeComponent },
