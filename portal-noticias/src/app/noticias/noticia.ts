@@ -11,14 +11,33 @@ import { noticias } from './dados-noticias';
   styleUrl: './noticia.scss'
 })
 export class NoticiaComponent {
-  id: number;
+  id = 0;
   noticia: any;
 
   constructor(private route: ActivatedRoute) {
-    this.id = Number(this.route.snapshot.paramMap.get('id'));
-    this.noticia = noticias.find(n => n.id === this.id);
+    this.route.paramMap.subscribe(params => {
+      this.id = Number(params.get('id'));
+      this.noticia = noticias.find(n => n.id === this.id);
 
-    console.log('ID recebido:', this.id);
-    console.log('Notícia encontrada:', this.noticia);
+      if (typeof window !== 'undefined') {
+        window.scrollTo(0, 0);
+      }
+
+      console.log('ID recebido:', this.id);
+      console.log('Notícia encontrada:', this.noticia);
+    });
+}
+
+  get noticiasRelacionadas() {
+    if (!this.noticia) {
+      return [];
+    }
+
+    return noticias
+      .filter(n =>
+        n.secao === this.noticia.secao &&
+        n.id !== this.noticia.id
+      )
+      .slice(0, 3);
   }
 }
