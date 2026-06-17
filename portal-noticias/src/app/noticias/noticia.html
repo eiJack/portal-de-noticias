@@ -14,6 +14,12 @@
 
     <h1>{{ noticia.titulo }}</h1>
 
+    <div class="meta-noticia">
+      <span>📅 {{ noticia.data }}</span>
+      <span>•</span>
+      <span>✍️ {{ noticia.autor }}</span>
+    </div>
+
     <p class="resumo">{{ noticia.resumo }}</p>
 
     <img
@@ -58,6 +64,23 @@
         {{ item }}
       </li>
     </ul>
+
+    <section class="relacionadas">
+    <h2>Notícias da mesma categoria</h2>
+    <div class="grid-relacionadas">
+      @for (item of noticiasRelacionadas; track item.id) {
+        <article class="card-relacionada">
+          <img [src]="item.imagens[0]" [alt]="item.titulo">
+
+          <div>
+            <span>{{ item.categoria }}</span>
+            <h3>{{ item.titulo }}</h3>
+            <a [routerLink]="['/noticia', item.id]">Ler mais</a>
+          </div>
+        </article>
+      }
+    </div>
+  </section>
 
   </div>
 

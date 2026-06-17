@@ -4,6 +4,8 @@ export const noticias = [
     secao: 'Utilidade Pública',
     categoria: 'Serviços ao Cidadão',
     rotaSecao: '/utilidade-publica',
+    data: '15 de Junho de 2026',
+    autor: 'Jackeline de Paula Lima',
     titulo: 'PAT São Roque amplia divulgação de oportunidades de emprego',
     resumo: 'O PAT continua atualizando semanalmente oportunidades em diversas áreas.',
     texto: [
@@ -34,6 +36,8 @@ export const noticias = [
     secao: 'Utilidade Pública',
     categoria: 'Defesa Civil e Saúde',
     rotaSecao: '/utilidade-publica',
+    data: '15 de Junho de 2026',
+    autor: 'Jackeline de Paula Lima',
     titulo: 'Alerta de frio intenso no Sul e Sudeste',
     resumo: 'O INMET mantém alerta para baixas temperaturas em estados do Sul e Sudeste.',
     texto: [
@@ -64,6 +68,8 @@ export const noticias = [
     secao: 'Utilidade Pública',
     categoria: 'Saúde Pública',
     rotaSecao: '/utilidade-publica',
+    data: '15 de Junho de 2026',
+    autor: 'Jackeline de Paula Lima',
     titulo: 'Vacinação contra Influenza ampliada para toda a população',
     resumo: 'Diversos estados ampliaram a campanha de vacinação contra a Influenza.',
     texto: [
@@ -96,6 +102,8 @@ export const noticias = [
     secao: 'Cultura e Entretenimento',
     categoria: 'Cultura Local',
     rotaSecao: '/entretenimento',
+    data: '15 de Junho de 2026',
+    autor: 'Jackeline de Paula Lima',
     titulo: 'Festival de Inverno de São Roque 2026 reúne música, arte e lazer',
     resumo: 'Evento cultural deve reunir apresentações, gastronomia e lazer para a população.',
     texto: [
@@ -119,6 +127,8 @@ export const noticias = [
     secao: 'Cultura e Entretenimento',
     categoria: 'Literatura',
     rotaSecao: '/entretenimento',
+    data: '15 de Junho de 2026',
+    autor: 'Jackeline de Paula Lima',
     titulo: 'Bienal Internacional do Livro incentiva leitura e aproxima público da literatura',
     resumo: 'Evento literário reúne editoras, autores e leitores em uma grande programação cultural.',
     texto: [
@@ -142,6 +152,8 @@ export const noticias = [
     secao: 'Cultura e Entretenimento',
     categoria: 'Arte Urbana',
     rotaSecao: '/entretenimento',
+    data: '15 de Junho de 2026',
+    autor: 'Jackeline de Paula Lima',
     titulo: 'Arte urbana transforma espaços públicos em galerias a céu aberto',
     resumo: 'Intervenções artísticas aproximam a população da cultura e renovam espaços urbanos.',
     texto: [
