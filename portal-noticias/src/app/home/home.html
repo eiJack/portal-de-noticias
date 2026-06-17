@@ -36,6 +36,7 @@
       <p>
         Encontre notícias por tema, categoria ou palavra-chave.
       </p>
+      
     </section>
     @if (termoPesquisa) {
   <section class="resultado-pesquisa">
@@ -45,27 +46,34 @@
     </div>
 
     @if (noticiasFiltradas.length > 0) {
-      <ul class="lista-resultados">
-        @for (noticia of noticiasFiltradas; track noticia.id) {
-          <li>
-            <a [routerLink]="['/noticia', noticia.id]">
-              {{ noticia.titulo }}
-            </a>
-            <span class="categoria-link">
-              ({{ noticia.categoria }})
-            </span>
-          </li>
-        }
-      </ul>
-    } @else {
-      <p class="sem-resultado">
-        Nenhuma notícia encontrada para "{{ termoPesquisa }}".
-      </p>
-    }
-  </section>
-}
+        <div class="grid-resultado">
+          @for (noticia of noticiasFiltradas; track noticia.id) {
+            <article class="card-resultado">
+              <img [src]="noticia.imagens[0]" [alt]="noticia.titulo">
+
+              <div class="conteudo-resultado">
+                <span class="categoria-tag">{{ noticia.categoria }}</span>
+
+                <h3>{{ noticia.titulo }}</h3>
+
+                <p>{{ noticia.resumo }}</p>
+
+                <a [routerLink]="['/noticia', noticia.id]">Ler mais</a>
+              </div>
+            </article>
+          }
+        </div>
+      } @else {
+        <p class="sem-resultado">
+          Nenhuma notícia encontrada para "{{ termoPesquisa }}".
+        </p>
+      }
+    </section>
+  }
   </section>
 
+  <!-- Quando pesquisa estiver vazia aparece todos os cards -->
+  @if (!termoPesquisa){
   <!-- ------------ esportes ------------ -->
   <section id="esportes" class="categoria">
     <div class="titulo-categoria">
@@ -192,5 +200,6 @@
       </article>
     </div>
   </section>
+  }
 
 </main>
