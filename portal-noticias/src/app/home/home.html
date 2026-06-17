@@ -3,13 +3,13 @@
   <section class="topo-conteudo">
     <section class="destaque">
       <div>
-        <span class="tag">Em destaque</span>
-        <h2>Informação organizada para facilitar o acesso às notícias</h2>
+        <h1>Projeto Final - Conecta News</h1>
         <p>
-          Portal desenvolvido para reunir conteúdos jornalísticos em categorias,
-          facilitando a navegação, a leitura e a encontrabilidade da informação.
+          Portal de notícias desenvolvido para a disciplina de Encontrabilidade,
+          reunindo conteúdos de Esportes, Ciência e Tecnologia, Utilidade Pública
+          e Cultura e Entretenimento.
         </p>
-      </div>
+  </div>
     </section>
 
     <section class="pesquisa">
@@ -81,54 +81,73 @@
       <p>Responsável: Cristiane Aparecida Barros</p>
     </div>
 
-  <div class="grid-cultura">
-    <article class="card-cultura">
-      <img src="/images/brasil-copa.jpg" alt="Brasil na Copa">
-      <h3>Qual é o próximo jogo do Brasil na Copa? Veja data e horário</h3>
-      <a [routerLink]="['/noticia', 7]">Ler mais</a>
-    </article>
+    <div class="layout-noticias">
+      <article class="noticia-principal">
+        <img src="/images/brasil-copa.jpg" alt="Brasil na Copa">
 
-    <article class="card-cultura">
-      <img src="/images/brasil-feminino.jpg" alt="Brasil Feminino">
-      <h3>Brasil segura pressão e vence Estados Unidos em amistoso</h3>
-      <a [routerLink]="['/noticia', 8]">Ler mais</a>
-    </article>
+        <div class="conteudo-principal">
+          <span>Futebol</span>
+          <h3>Qual é o próximo jogo do Brasil na Copa? Veja data e horário</h3>
+          <a [routerLink]="['/noticia', 7]">Ler mais</a>
+        </div>
+      </article>
 
-    <article class="card-cultura">
-      <img src="/images/ginastica-pan.jpg" alt="Ginástica">
-      <h3>Pan-Americanos de Ginástica em 2026 serão realizados no Brasil</h3>
-      <a [routerLink]="['/noticia', 9]">Ler mais</a>
-    </article>
-  </div>
-</section>
+      <div class="noticias-laterais">
+        <article class="noticia-lateral">
+          <img src="/images/brasil-feminino.jpg" alt="Brasil Feminino">
+          <div>
+            <span>Futebol Feminino</span>
+            <h3>Brasil segura pressão e vence Estados Unidos em amistoso</h3>
+            <a [routerLink]="['/noticia', 8]">Ler mais</a>
+          </div>
+        </article>
+
+        <article class="noticia-lateral">
+          <img src="/images/ginastica-pan.jpg" alt="Ginástica">
+          <div>
+            <span>Ginástica</span>
+            <h3>Pan-Americanos de Ginástica em 2026 serão realizados no Brasil</h3>
+            <a [routerLink]="['/noticia', 9]">Ler mais</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
 
   <!-- ------------ ciência e tecnologia ------------ -->
-<section id="tecnologia" class="categoria">
+  <section id="tecnologia" class="categoria">
   <div class="titulo-categoria">
     <h2>Ciência e Tecnologia</h2>
     <p>Responsável: Cristiane Aparecida Barros</p>
   </div>
 
   <div class="grid-cultura">
-
-    <article class="card-cultura">
+    <article  class="card-cultura">
       <img src="/images/ccad-cefet.jpg" alt="Centro de Computação">
-      <h3>Nova infraestrutura computacional amplia acesso à ciência de ponta em Minas Gerais</h3>
-      <a [routerLink]="['/noticia', 10]">Ler mais</a>
+      <div>
+        <span>Computação</span>
+        <h3>Nova infraestrutura computacional amplia acesso à ciência de ponta em Minas Gerais</h3>
+        <a [routerLink]="['/noticia', 10]">Ler mais</a>
+      </div>
     </article>
 
-    <article class="card-cultura">
+    <article  class="card-cultura">
       <img src="/images/microplasticos.jpg" alt="Microplásticos">
-      <h3>Ciência nuclear brasileira combate poluição por microplásticos</h3>
-      <a [routerLink]="['/noticia', 11]">Ler mais</a>
+      <div>
+        <span>Meio Ambiente</span>
+        <h3>Ciência nuclear brasileira combate poluição por microplásticos</h3>
+        <a [routerLink]="['/noticia', 11]">Ler mais</a>
+      </div>
     </article>
 
-    <article class="card-cultura">
+    <article  class="card-cultura">
       <img src="/images/tupann-ia.jpg" alt="Inteligência Artificial">
-      <h3>Pesquisadores do Impa desenvolvem modelo de IA que prevê chuvas</h3>
-      <a [routerLink]="['/noticia', 12]">Ler mais</a>
+      <div>
+        <span>Inteligência Artificial</span>
+        <h3>Pesquisadores do Impa desenvolvem modelo de IA que prevê chuvas</h3>
+        <a [routerLink]="['/noticia', 12]">Ler mais</a>
+      </div>
     </article>
-
   </div>
 </section>
 
