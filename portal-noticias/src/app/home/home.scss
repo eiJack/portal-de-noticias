@@ -252,6 +252,32 @@
 .lista-sugestoes li:hover {
   background: #f5f5f5;
 }
+.lista-resultados {
+  list-style: none;
+  padding: 0;
+  margin-top: 1rem;
+}
+
+.lista-resultados li {
+  padding: 10px 0;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.lista-resultados a {
+  color: #0d6efd;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.lista-resultados a:hover {
+  text-decoration: underline;
+}
+
+.categoria-link {
+  margin-left: 8px;
+  color: #666;
+  font-size: 0.9rem;
+}
 
 //---------noticias utilidades publicas----------
 .layout-noticias {
