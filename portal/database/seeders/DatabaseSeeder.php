@@ -12,8 +12,8 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        $this->call([
-            CategoryNoticeSeeder::class,
-        ]);
+        $this->call(
+            PortalNoticiasSeeder::class
+        );
     }
 }
