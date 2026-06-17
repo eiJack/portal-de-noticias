@@ -29,4 +29,22 @@ export class HomeComponent {
       noticia.resumo.toLowerCase().includes(termo)
     );
   }
+
+  get sugestoes() {
+  const termo = this.termoPesquisa.toLowerCase().trim();
+
+  if (termo.length < 2) {
+    return [];
+  }
+
+  return this.noticias
+    .filter(noticia =>
+      noticia.titulo.toLowerCase().includes(termo)
+    )
+    .slice(0, 5); // máximo de 5 sugestões
+}
+
+selecionarSugestao(titulo: string) {
+  this.termoPesquisa = titulo;
+}
 }

@@ -16,10 +16,22 @@
       <h3>Pesquisar</h3>
 
       <div class="caixa-pesquisa">
-        <span>🔎</span>
-        <input type="text" placeholder="Pesquisar notícias..." 
+      <span>🔎</span>
+      <input
+        type="text"
+        placeholder="Pesquisar notícias..."
         [(ngModel)]="termoPesquisa">
       </div>
+
+      @if (sugestoes.length > 0) {
+        <ul class="lista-sugestoes">
+          @for (sugestao of sugestoes; track sugestao.id) {
+            <li (click)="selecionarSugestao(sugestao.titulo)">
+              {{ sugestao.titulo }}
+            </li>
+          }
+        </ul>
+      }
 
       <p>
         Encontre notícias por tema, categoria ou palavra-chave.

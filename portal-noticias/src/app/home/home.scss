@@ -233,6 +233,25 @@
     height: 220px;
   }
 }
+.lista-sugestoes {
+  list-style: none;
+  padding: 0;
+  margin-top: 5px;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.lista-sugestoes li {
+  padding: 10px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.lista-sugestoes li:hover {
+  background: #f5f5f5;
+}
 
 //---------noticias utilidades publicas----------
 .layout-noticias {
