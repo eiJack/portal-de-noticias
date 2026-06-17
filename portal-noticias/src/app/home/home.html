@@ -26,7 +26,7 @@
       @if (sugestoes.length > 0) {
         <ul class="lista-sugestoes">
           @for (sugestao of sugestoes; track sugestao.id) {
-            <li (click)="selecionarSugestao(sugestao.titulo)">
+            <li [routerLink]="['/noticia', sugestao.id]">
               {{ sugestao.titulo }}
             </li>
           }
