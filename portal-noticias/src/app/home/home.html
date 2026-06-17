@@ -17,22 +17,55 @@
 
       <div class="caixa-pesquisa">
         <span>🔎</span>
-        <input type="text" placeholder="Pesquisar notícias...">
+        <input type="text" placeholder="Pesquisar notícias..." 
+        [(ngModel)]="termoPesquisa">
       </div>
 
       <p>
         Encontre notícias por tema, categoria ou palavra-chave.
       </p>
     </section>
+    @if (termoPesquisa) {
+      <section class="resultado-pesquisa">
+        <div class="titulo-categoria">
+          <h2>Resultado da pesquisa</h2>
+          <p>Notícias encontradas para: "{{ termoPesquisa }}"</p>
+        </div>
+
+      @if (noticiasFiltradas.length > 0) {
+        <div class="grid-noticias">
+          @for (noticia of noticiasFiltradas; track noticia.id) {
+            <article class="card-resultado">
+              <img [src]="noticia.imagens[0]" [alt]="noticia.titulo">
+
+              <div class="conteudo-resultado">
+                <span class="categoria-tag">{{ noticia.categoria }}</span>
+
+                <h3>{{ noticia.titulo }}</h3>
+
+                <p>{{ noticia.resumo }}</p>
+
+                <a [routerLink]="['/noticia', noticia.id]">Ler mais</a>
+              </div>
+            </article>
+          }
+        </div>
+      } @else {
+        <p class="sem-resultado">
+          Nenhuma notícia encontrada para "{{ termoPesquisa }}".
+        </p>
+      }
+    </section>
+  }
 
   </section>
 
   <!-- ------------ esportes ------------ -->
-<section id="esportes" class="categoria">
-  <div class="titulo-categoria">
-    <h2>Esportes</h2>
-    <p>Responsável: Cristiane Aparecida Barros</p>
-  </div>
+  <section id="esportes" class="categoria">
+    <div class="titulo-categoria">
+      <h2>Esportes</h2>
+      <p>Responsável: Cristiane Aparecida Barros</p>
+    </div>
 
   <div class="grid-cultura">
     <article class="card-cultura">
@@ -153,5 +186,7 @@
       </article>
     </div>
   </section>
+  }
+  
 
 </main>

@@ -168,6 +168,72 @@
   color: #8a8a8a;
 }
 
+.resultado-pesquisa {
+  margin-top: 35px;
+}
+
+.grid-resultado {
+  display: grid;
+  gap: 20px;
+}
+
+.card-resultado {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  background: white;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.08);
+}
+
+.card-resultado img {
+  width: 100%;
+  height: 100%;
+  min-height: 210px;
+  object-fit: cover;
+}
+
+.conteudo-resultado {
+  padding: 28px;
+}
+
+.conteudo-resultado h3 {
+  color: #002b4f;
+  font-size: 24px;
+  margin: 18px 0 12px;
+}
+
+.conteudo-resultado p {
+  color: #5d6d7e;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.conteudo-resultado a {
+  display: inline-block;
+  margin-top: 14px;
+  color: #6b4f4f;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.sem-resultado {
+  background: white;
+  padding: 25px;
+  border-radius: 16px;
+  color: #5d6d7e;
+}
+
+@media (max-width: 768px) {
+  .card-resultado {
+    grid-template-columns: 1fr;
+  }
+
+  .card-resultado img {
+    height: 220px;
+  }
+}
+
 //---------noticias utilidades publicas----------
 .layout-noticias {
   display: grid;
