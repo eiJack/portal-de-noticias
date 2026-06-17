@@ -62,7 +62,19 @@
   background: rgba(255, 255, 255, 0.2);
 }
 
+.ativo {
+  background: white;
+  color: #9a6666 !important;
+  border-radius: 10px;
+  padding: 10px 15px;
+}
 
+.menu a.ativo {
+  background: transparent;
+  color: white !important;
+  border-bottom: 4px solid white;
+  border-radius: 0;
+}
 
 // ------------rodape-----------
 .rodape {
