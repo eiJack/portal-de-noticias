@@ -31,6 +31,29 @@ class NoticeController extends Controller
         return response()->json($notices, 200);
     }
 
+    public function search(Request $request)
+    {
+        $term = $request->query('term');
+
+        $notices = Notice::select(
+                'id',
+                'category_id',
+                'title',
+                'description',
+                'path_image',
+                'slug',
+                'created_at',
+                'updated_at'
+            )
+            ->with('category:id,name,slug')
+            ->where('title', 'like', "%{$term}%")
+            ->orWhere('description', 'like', "%{$term}%")
+            ->orWhere('notice', 'like', "%{$term}%")
+            ->paginate(12);
+
+        return response()->json($notices, 200);
+    }
+
     public function show(string $slug)
     {
         $notice = Notice::select(

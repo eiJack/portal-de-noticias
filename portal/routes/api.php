@@ -26,5 +26,6 @@ Route::prefix('public')->group(function () {
     Route::get('/categories', [CategoryController::class, 'list']);
     Route::get('/categories/{slug}', [CategoryController::class, 'index']);
     Route::get('/notices', [NoticeController::class, 'latest']);
+    Route::get('/notices/search', [NoticeController::class, 'search']);
     Route::get('/notices/{slug}', [NoticeController::class, 'show']);
 });

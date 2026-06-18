@@ -20,14 +20,19 @@
       <input
         type="text"
         placeholder="Pesquisar notícias..."
-        [(ngModel)]="termoPesquisa">
+        [(ngModel)]="termoPesquisa"
+        (input)="buscarNaApi()">
       </div>
+
+      @if (buscando) {
+        <p class="carregando-busca">Buscando notícias...</p>
+      }
 
       @if (sugestoes.length > 0) {
         <ul class="lista-sugestoes">
           @for (sugestao of sugestoes; track sugestao.id) {
             <li [routerLink]="['/noticia', sugestao.id]">
-              {{ sugestao.titulo }}
+            {{ sugestao.titulo }}
             </li>
           }
         </ul>
